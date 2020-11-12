@@ -19,6 +19,7 @@ namespace Miniräknare
                 do
                 {
                     Console.Clear();
+                    // Välkomstmusik
                     Console.Beep(440, 500);
                     Console.Beep(329, 200);
                     Console.Beep(311, 200);
@@ -67,11 +68,13 @@ namespace Miniräknare
                     {
                         Console.WriteLine("Ogiltig input. Vänligen försök igen");
                         Console.WriteLine("Startar om miniräknaren");
+                        // Error-trudelutt
                         Console.Beep(440, 1000);
                         Console.Beep(311, 1000);
                         Console.Beep(37, 2000);
                         continue;
                     }
+                    // Spänningshöjande trudelutt
                     Console.Beep(415, 200);
                     Console.Beep(415, 200);
                     Console.Beep(415, 200);
@@ -93,11 +96,13 @@ namespace Miniräknare
                     if (!ok)
                     {
                         Console.WriteLine("Skriv in ett giltigt nummer");
+                        // Varnings-trudelutt
                         Console.Beep(440, 1000);
                         Console.Beep(311, 1000);
                         Console.Beep(37, 2000);
                     }
                 } while (!ok);
+                // Trudelutt som höjer intensiteten
                 Console.Beep(174, 300);
                 Console.Beep(218, 300);
                 Console.Beep(262, 300);
@@ -122,6 +127,7 @@ namespace Miniräknare
                         ok = false;
                     }
                 } while (!ok);
+                // Trudelutt som höjer intensiteten ytterligare
                 Console.Beep(208, 300);
                 Console.Beep(262, 300);
                 Console.Beep(311, 300);
@@ -147,7 +153,7 @@ namespace Miniräknare
                 {
                     Console.WriteLine("{0} {1} {2} = {3}", (int) nr1, operation, (int) nr2, ((int) nr1 & (int) nr2));
                 }
-                
+                // Spela 'Glad trudelutt' eftersom uträkningen lyckades
                 Console.Beep(440, 300);
                 Console.Beep(440, 600);
                 Console.Beep(440, 300);
@@ -159,6 +165,7 @@ namespace Miniräknare
                 Console.ReadLine();
             } while (true);
             Console.WriteLine("Hejdå!");
+            // Spela 'Imperial March'
             Console.Beep(415, 500);
             Console.Beep(415, 500);
             Console.Beep(415, 500);
