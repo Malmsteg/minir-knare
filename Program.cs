@@ -151,7 +151,7 @@ namespace Miniräknare
                 }
                 else if (operation == '%')
                 {
-                    Console.WriteLine("{0} {1} {2} = {3}", (int) nr1, operation, (int) nr2, ((int) nr1 & (int) nr2));
+                    Console.WriteLine("{0} {1} {2} = {3}", (int) nr1, operation, (int) nr2, ((int) nr1 % (int) nr2));
                 }
                 // Spela 'Glad trudelutt' eftersom uträkningen lyckades
                 Console.Beep(440, 300);
